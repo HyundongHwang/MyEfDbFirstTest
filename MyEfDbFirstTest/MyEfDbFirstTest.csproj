@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BC36EB75-86AC-44CC-AD3B-2D74891A3BBF}</ProjectGuid>
+    <ProjectGuid>{10355D6E-92CC-4F3A-9A24-D439AE9B2167}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MyEfDbFirstClientTest</RootNamespace>
-    <AssemblyName>MyEfDbFirstClientTest</AssemblyName>
+    <RootNamespace>MyEfDbFirstTest</RootNamespace>
+    <AssemblyName>MyEfDbFirstTest</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -90,6 +90,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="create-tables.sql" />
     <Content Include="MyDb.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>MyDb.edmx</DependentUpon>

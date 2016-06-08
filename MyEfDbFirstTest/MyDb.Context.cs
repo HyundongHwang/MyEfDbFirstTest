@@ -7,25 +7,35 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MyEfDbFirstClientTest
+namespace MyEfDbFirstTest
 {
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
-    
-    public partial class MyDbConStr : DbContext
+
+    public partial class Entities : DbContext
     {
-        public MyDbConStr()
-            : base("name=MyDbConStr")
+        public Entities()
+            : base(
+@"
+Data Source=HHDX1CARBON\MYINST;
+Initial Catalog=mydb;
+Integrated Security=True;
+Connect Timeout=15;
+Encrypt=False;
+TrustServerCertificate=True;
+ApplicationIntent=ReadWrite;
+MultiSubnetFailover=False
+")
         {
         }
-    
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            throw new UnintentionalCodeFirstException();
+            //throw new UnintentionalCodeFirstException();
         }
-    
-        public virtual DbSet<Course> Courses { get; set; }
-        public virtual DbSet<Student> Students { get; set; }
+
+        public virtual DbSet<Course> Course { get; set; }
+        public virtual DbSet<Student> Student { get; set; }
     }
 }

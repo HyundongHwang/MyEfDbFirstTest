@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("MyEfDbFirstClientTest")]
+[assembly: AssemblyTitle("MyEfDbFirstTest")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("MyEfDbFirstClientTest")]
+[assembly: AssemblyProduct("MyEfDbFirstTest")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("bc36eb75-86ac-44cc-ad3b-2d74891a3bbf")]
+[assembly: Guid("10355d6e-92cc-4f3a-9a24-d439ae9b2167")]
 
 // Version information for an assembly consists of the following four values:
 //

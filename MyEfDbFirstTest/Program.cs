@@ -4,20 +4,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MyEfDbFirstClientTest
+namespace MyEfDbFirstTest
 {
     class Program
     {
         static void Main(string[] args)
         {
-            using (var context = new MyDbContext())
+            using (var context = new Entities())
             {
-                context.Database.Log += (log) => 
+                context.Database.Log += (log) =>
                 {
                     Console.WriteLine($"log : {log}");
                 };
 
-                context.Students.Add(new Student
+                context.Student.Add(new Student
                 {
                     LastName = "황",
                     FirstName = "현동",
@@ -26,7 +26,7 @@ namespace MyEfDbFirstClientTest
 
                 context.SaveChanges();
 
-                var list = context.Students.ToList();
+                var list = context.Student.ToList();
             }
         }
     }

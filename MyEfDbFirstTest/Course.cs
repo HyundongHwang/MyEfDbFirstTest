@@ -7,16 +7,16 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MyEfDbFirstClientTest
+namespace MyEfDbFirstTest
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class Student
+    public partial class Course
     {
-        public int StudentID { get; set; }
-        public string LastName { get; set; }
-        public string FirstName { get; set; }
-        public Nullable<System.DateTime> EnrollmentDate { get; set; }
+        public int CourseID { get; set; }
+        public string Title { get; set; }
+        public Nullable<int> Credits { get; set; }
+        public Nullable<int> Credits2 { get; set; }
     }
 }
